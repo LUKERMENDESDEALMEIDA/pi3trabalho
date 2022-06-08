@@ -1,0 +1,7 @@
+pandas
+keras
+sklearn
+pillow
+discord
+numpy
+tensorflow
