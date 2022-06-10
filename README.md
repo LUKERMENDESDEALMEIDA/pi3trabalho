@@ -16,7 +16,7 @@ tensorflow
 
 ### Treino:
 
--Colocar o dataset dentro da pasta database \
+-Colocar o dataset dentro da pasta database
 
 ./start.sh train
 
