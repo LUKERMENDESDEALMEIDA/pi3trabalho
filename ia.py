@@ -20,7 +20,7 @@ from tensorflow.keras.callbacks import TensorBoard
 #unix
 #tensorboard --logdir logs/
 
-EPOCHS=50
+EPOCHS=25
 debug = False
 
 categories =  ["20 km/h", "30 km/h", "50 km/h", "60 km/h", "70 km/h", "80 km/h", "Fim de zona de ultrapassagem, limite antigo nao vale mais", 
@@ -44,7 +44,7 @@ def load(model_name):
 	return model
 
 def predict(model, img_path):
-	prediction = model.predict([prepare_image(f"{img_path}")])
+	prediction = model.predict([prepare_image(img_path)])
 	label = np.argmax(prediction)
 	if debug:
 		print(f"LABEL = {label}")
@@ -109,8 +109,8 @@ def create_training_data():
 			
 
 def train(model_name):
-	NAME = f"traffic-{int(time.time())}"
-	tensorboard = TensorBoard(log_dir=f"logs/{NAME}")
+	log_name = f"traffic-{int(time.time())}"
+	tensorboard = TensorBoard(log_dir=f"logs/{log_name}")
 	data, labels = create_training_data()
 
 	X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=42)
