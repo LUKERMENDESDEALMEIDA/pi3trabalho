@@ -35,4 +35,4 @@ O objetivos era criar um bot de discord capaz de reconhecer imagens de placas de
 
 ## Alunos:
 
-Joao Barradas, Leandro Borges, Luker Almeida
+Joao Barradas, Leandro Borges e Luker Almeida
