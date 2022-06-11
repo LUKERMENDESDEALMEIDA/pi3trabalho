@@ -20,7 +20,6 @@ tensorflow
 
 ./start.sh train
 
-
 ### Bot Discord:
 
 ./start.sh
@@ -36,4 +35,4 @@ O objetivos era criar um bot de discord capaz de reconhecer imagens de placas de
 
 ## Alunos:
 
-Joao Barradas e Leandro Borges
+Joao Barradas, Leandro Borges, Luker Almeida
